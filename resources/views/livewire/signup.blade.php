@@ -28,6 +28,7 @@
             <span>I agree to the</span>
 
             <div x-data="{ open: false }">
+
                 <!-- Trigger -->
                 <span x-on:click="open = true">
                     <button x-on:click="open = true" type="button" class="underline text-blue-500">

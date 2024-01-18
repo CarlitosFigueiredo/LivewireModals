@@ -6,6 +6,8 @@
 
         <title>Modals</title>
 
+        <script defer src="https://unpkg.com/@alpinejs/ui@3.13.1-beta.0/dist/cdn.min.js"></script>
+
         @vite('resources/css/app.css')
     </head>
     <body >
