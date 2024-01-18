@@ -11,8 +11,9 @@
         @vite('resources/css/app.css')
     </head>
     <body >
-        <main class="flex justify-center items-center bg-slate-200 min-h-screen text-slate-800">
-            <livewire:signup>
+        <main class="flex justify-center items-start pt-24 bg-slate-200 min-h-screen text-slate-800">
+            {{-- <livewire:signup> --}}
+            <livewire:show-posts />
         </main>
     </body>
 </html>
