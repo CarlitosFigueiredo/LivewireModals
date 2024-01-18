@@ -2,11 +2,23 @@
 
 namespace App\Livewire;
 
+use App\Livewire\Forms\CreatePost;
 use App\Models\Post;
 use Livewire\Component;
 
 class ShowPosts extends Component
 {
+    public CreatePost $form;
+
+    public $showAddPostDialog = false;
+
+    public function add()
+    {
+        $this->form->save();
+
+        $this->reset('showAddPostDialog');
+    }
+
     public function delete($postId)
     {
         $post = Post::find($postId);
