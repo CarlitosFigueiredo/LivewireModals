@@ -7,6 +7,7 @@ use Livewire\Component;
 
 class ShowPosts extends Component
 {
+
     public function delete($postId)
     {
         $post = Post::find($postId);
